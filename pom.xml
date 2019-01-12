@@ -13,14 +13,14 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.surefire.version>2.21.0</maven.surefire.version>
         <junit.version>4.12</junit.version>
-        <selenium.versiuon>3.7.1</selenium.versiuon>
+        <selenium.version>3.141.59</selenium.version>
         <cucumber.version>1.2.5</cucumber.version>
     </properties>
     <dependencies>
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
-        <version>${selenium.versiuon}</version>
+        <version>${selenium.version}</version>
     </dependency>
     <dependency>
         <groupId>junit</groupId>
