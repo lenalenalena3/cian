@@ -23,10 +23,12 @@ public class StepInitial {
 
             String catalog = System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe";
             System.setProperty("webdriver.chrome.driver", catalog);
+
             ChromeOptions options = new ChromeOptions();
             options.addArguments("-incognito"); //режим инкогнито- не сохранится информация о сайтах, которые посещали
             options.addArguments("-start-maximized"); //запуск на полный экран
             options.addArguments("-dom.webnotifications.enabled"); //отключение веб-push уведомлений
+            options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             driver = new ChromeDriver(capabilities);
